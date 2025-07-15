@@ -31,7 +31,7 @@ for file in glob.glob(path):
     file_count += 1
     with open(file, encoding='utf-8', errors='ignore') as file_in:
 
-#read the texts and preprocess each line by converting to lowercase, removing tags, and replacing or removing problematic characters
+# Read the texts and preprocess each line by converting to lowercase, removing tags, and replacing or removing problematic characters
         text = list(file_in)
         for line in text:
             line_count += 1
@@ -43,11 +43,11 @@ for file in glob.glob(path):
             line = re.sub(r'–\s', ', ', line) 
             line = re.sub(r"[’‘'\"“”`´́]", '', line)
 
-#split each line into sentences based on termianl punctuations
+# Split each line into sentences based on termianl punctuations
             if line_count > 0:
                 sentences = re.split(r'[.,?!;:]', line)
 
-#split each sentence into words
+# Split each sentence into words
                 for sentence in sentences:
                     words = sentence.split()
                     length = len(words)
