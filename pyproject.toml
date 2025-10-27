@@ -11,6 +11,16 @@ requires-python = ">=3.8"
 license = { text = "MIT" }
 authors = [{ name = "Taehyeong (Terry) Kim", email= "tk654@nau.edu"}]
 
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Text Processing :: Linguistic"
+]
+
 # No external deps: using stdlib only
 dependencies = []
 
@@ -25,13 +35,3 @@ keylexbundles = "keylexbundles.__main__:main"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["keylexbundles*"]
-
-classifiers = [
-  "Development Status :: 3 - Alpha",
-  "Programming Language :: Python",
-  "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.12",
-  "License :: OSI Approved :: MIT License",
-  "Intended Audience :: Science/Research",
-  "Topic :: Text Processing :: Linguistic"
-]
