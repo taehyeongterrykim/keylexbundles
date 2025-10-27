@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keylexbundles"
+version = "0.1.1"
+description = "Compute key lexical bundles (4-grams) keyness between a target corpus and a reference corpus."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Taehyeong Kim" }]
+
+# No external deps: using stdlib only
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/taehyeongterrykim/keylexbundles"
+
+[project.scripts]
+# installs a console command `keylexbundles` that calls main()
+keylexbundles = "keylexbundles.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["keylexbundles*"]

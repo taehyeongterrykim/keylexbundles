@@ -1,0 +1,19 @@
+# Ignore virtual environment
+.venv/
+.venv-text/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Python cache and temporary files
+__pycache__/
+*.pyc
+*.log
+*.py[cod]
+*.egg-info/
+
+# OS
+.DS_Store
+
+dist/
+build/
