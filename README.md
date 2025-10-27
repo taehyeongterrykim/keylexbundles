@@ -1,4 +1,4 @@
-# KeyLexBundles
+# keylexbundles
 
 `keylexbundles` provides a Python function `compute_keyness` to compute **4-gram lexical bundle keyness** between a target and a reference corpus.
 
