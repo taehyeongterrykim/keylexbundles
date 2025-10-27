@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "keylexbundles"
-version = "0.1.1"
+version = "0.1.2"
 description = "Compute key lexical bundles (4-grams) keyness between a target corpus and a reference corpus."
 readme = "README.md"
 requires-python = ">=3.8"
